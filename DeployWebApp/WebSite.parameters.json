@@ -4,6 +4,18 @@
   "parameters": {
     "hostingPlanName": {
       "value": "hpdemoWebAppPlan"
+    },
+
+    "skuName": {
+      "value": "S1"
+    },
+
+    "skuCapacity": {
+      "value": 1
+    },
+
+    "webSiteName": {
+      "value": "hpdemo"
     }
   }
 }
