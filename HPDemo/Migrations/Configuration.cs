@@ -26,12 +26,14 @@ namespace HPDemo.Migrations
             {
               new Movie
               {
+                  ID = 1,
                   Title = "Pulp Fiction",
                   ReleaseDate = DateTime.Parse("1994-11-11"),
                   Genre = "Crime"
               },
               new Movie
               {
+                  ID = 2,
                   Title = "Resevoir Dogs",
                   ReleaseDate = DateTime.Parse("1992-09-02"),
                   Genre = "Crime"
