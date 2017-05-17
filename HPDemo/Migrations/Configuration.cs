@@ -22,25 +22,26 @@ namespace HPDemo.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            var Movies = new List<Movie>
-            {
+
+            context.Movies.AddOrUpdate(m => m.Title,
               new Movie
               {
                   ID = 1,
                   Title = "Pulp Fiction",
                   ReleaseDate = DateTime.Parse("1994-11-11"),
-                  Genre = "Crime"
+                  Genre = "Crime",
+                  Price = 10
               },
               new Movie
               {
                   ID = 2,
                   Title = "Resevoir Dogs",
                   ReleaseDate = DateTime.Parse("1992-09-02"),
-                  Genre = "Crime"
+                  Genre = "Crime",
+                  Price = 10
               }
-            };
+            );
 
-            Movies.ForEach(m => context.Movies.AddOrUpdate(t => t.Title, m));
             context.SaveChanges();
         }
     }
